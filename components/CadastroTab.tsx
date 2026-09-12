@@ -312,7 +312,7 @@ export default function CadastroTab() {
                 </div>
               ))}
               {(form.health??[]).length === 0 && (
-                <div style={{ fontSize:12, color:"var(--text-muted)", textAlign:"center", padding:"8px 0" }}>Nenhum indicador. Clique em "+ Adicionar".</div>
+                <div style={{ fontSize:12, color:"var(--text-muted)", textAlign:"center", padding:"8px 0" }}>Nenhum indicador. Clique em  + Adicionar.</div>
               )}
             </div>
           </div>
