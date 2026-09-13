@@ -7,9 +7,9 @@ function fmt(v: number, decimals = 1): string {
 }
 
 const statusColor = { ok: "#1D9E75", warn: "#BA7517", bad: "#E24B4A" } as const;
-const statusBg    = { ok: "#E1F5EE", warn: "#FAEEDA", bad: "#FCEBEB" } as const;
-const statusTxt   = { ok: "#0F6E56", warn: "#854F0B", bad: "#A32D2D" } as const;
-const statusIcon  = { ok: "✓", warn: "⚠", bad: "⚠" } as const;
+const statusBg = { ok: "#E1F5EE", warn: "#FAEEDA", bad: "#FCEBEB" } as const;
+const statusTxt = { ok: "#0F6E56", warn: "#854F0B", bad: "#A32D2D" } as const;
+const statusIcon = { ok: "✓", warn: "⚠", bad: "⚠" } as const;
 
 /**
  * Conteúdo da Projeção de Produção de Leite — sem seletor de animal próprio:

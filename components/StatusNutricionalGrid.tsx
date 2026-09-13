@@ -67,6 +67,7 @@ export default function StatusNutricionalGrid({ totals, pesoVaca, phase, cow }: 
         {tile("EE", `${fmt(totals.eeKg)} kg`, `${fmt(totals.eePct,1)}%`)}
         {tile("Ca", `${fmt(totals.caKg,3)} kg`, `${fmt(totals.caPct,2)}%`)}
         {tile("P", `${fmt(totals.pKg,3)} kg`, `${fmt(totals.pPct,2)}%`)}
+        {tile("AM", `${fmt(totals.amidoKg,3)} kg`, `${fmt(totals.amidoPct,2)}%`)}
       </div>
       <div style={{ display:"grid", gridTemplateColumns:"repeat(6, 1fr)" }}>
         {tile("FDN", `${fmt(totals.fdnKg)} kg`, `${fmt(totals.fdnPct,1)}%`)}
@@ -75,6 +76,7 @@ export default function StatusNutricionalGrid({ totals, pesoVaca, phase, cow }: 
         {tile("MM", `${fmt(totals.mmKg)} kg`, `${fmt(totals.mmPct,1)}%`)}
         {tile("Custo", `R$ ${fmt(totals.custoTotal)}`, `${fmt(totals.custoPorKg)}/kg`)}
         {tile("MS total", `${fmt(totals.qtyTotal)} kg MN`, undefined)}
+        {tile("AM total", `${fmt(totals.amidoKg,3)} kg`, `${fmt(totals.amidoPct,2)}%`)}
       </div>
 
       {/* Insight — leitura automática dos totais acima contra a faixa da fase (app/nutritionInsight.ts). */}

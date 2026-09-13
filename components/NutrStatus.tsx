@@ -42,6 +42,7 @@ const NUTR_ROWS: { key: NutrKey; label: string; max: number }[] = [
   { key:"ee",  label:"EE",   max:12  },
   { key:"ca",  label:"Ca",   max:2   },
   { key:"p",   label:"P",    max:0.7 },
+
 ];
 
 export default function NutrStatus({ diet, phase }: { diet: DietLine[]; phase: string }) {
